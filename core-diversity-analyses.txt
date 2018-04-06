@@ -18,10 +18,10 @@ echo "Core diversity analyses"
 time core_diversity_analyses.py \
 --recover_from_failure \
 -i otus/otu_table.biom \
--m map.tsv \
+-m mapping_output/map.tsv_corrected.txt \
 -t otus/97_otus.tree \
 -e 616 \
--o cdda
+-o cda
 
 # deactivating environment
 source deactivate

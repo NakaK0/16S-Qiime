@@ -1,0 +1,7 @@
+total 4.5M
+-rw-r--r-- 1 cbmucl33 cbmucl33  918 Apr  7 00:21 biom_table_summary.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 3.7M Apr  7 00:21 table_mc616.biom
+-rw-r--r-- 1 cbmucl33 cbmucl33 808K Apr  7 00:21 table_even616.biom
+drwxr-xr-x 4 cbmucl33 cbmucl33 4.0K Apr  7 00:21 bdiv_even616
+drwxr-xr-x 4 cbmucl33 cbmucl33 4.0K Apr  7 00:37 arare_max616
+-rw-r--r-- 1 cbmucl33 cbmucl33 6.8K Apr  7 00:37 log_20180407002117.txt

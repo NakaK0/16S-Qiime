@@ -17,7 +17,7 @@ export TMPDIR=~/qiime_tmp
 echo "splitting libraries"
 time split_libraries_fastq.py \
 --barcode_type 12 \
--m map_incomplete.tsv \
+-m mapping_output/map.tsv_corrected.txt \
 -i Read12/fastq-join_joined/fastqjoin.join.fastq \
 -b Read12/fastq-join_joined/fastqjoin.join_barcodes.fastq \
 -o dem1 \
@@ -25,11 +25,6 @@ time split_libraries_fastq.py \
 
 --rev_comp_barcode \
 --rev_comp_mapping_barcodes
-
-# counting sequences
-echo "Counting sequence"
-time count_seqs.py -i dem1/seqs.fna
-
 
 #deactivating environment
 source deactivate

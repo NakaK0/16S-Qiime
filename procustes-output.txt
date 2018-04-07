@@ -1,0 +1,4 @@
+total 12K
+-rw-r--r-- 1 cbmucl33 cbmucl33 2.0K Apr  7 14:51 unweighted_unifrac_pc_transformed_reference.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 2.0K Apr  7 14:51 weighted_unifrac_pc_transformed_q1.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33  279 Apr  7 14:51 procrustes_results.txt

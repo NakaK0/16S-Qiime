@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules
+module load eb
+module load Miniconda2
+
+# loading virtualenv
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# Performing Procrustes Analysis
+echo "transform coordinate matrices"
+time transform_coordinate_matrices.py \
+-i cda/ngs_analysis/bdiv_even616/unweighted_unifrac_pc.txt,cda/ngs_analysis/bdiv_even616/weighted_unifrac_pc.txt \
+-o pro_out
+
+# deactivating environment
+source deactivate

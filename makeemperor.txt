@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules
+module load eb
+module load Miniconda2
+
+# loading virtualenv
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# Edit axis and comparison
+echo "make emperor"
+time make_emperor.py \
+-c \
+-i pro_out \
+-o pro_out/plots/ \
+-m map.tsv \
+--custom_axes SamplePh
+
+# deactivating environment
+source deactivate

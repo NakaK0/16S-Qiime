@@ -17,11 +17,11 @@ export TMPDIR=~/qiime_tmp
 echo "Core diversity analyses"
 time core_diversity_analyses.py \
 --recover_from_failure \
--i otusopen1/otu_table_mc2.biom \
+-i otusopen1/otu_table_mc2_w_tax_no_pynast_failures.biom \
 -m map.tsv \
 -t otusopen1/rep_set.tre \
 -e 765 \
--o cda-open1 \
+-o cda-open2 \
 -a \
 -O 16
 

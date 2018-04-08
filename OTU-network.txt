@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules
+module load eb
+module load Miniconda2
+
+# loading virtualenv
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# make otu network
+echo "make otu network"
+time make_otu_network.py \
+-i otusopen/otu_table_mc2.biom \
+-m map.tsv \
+-o otu_network \
+
+# deactivating environment
+source deactivate

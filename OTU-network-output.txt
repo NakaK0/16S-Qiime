@@ -1,0 +1,7 @@
+total 129M
+-rw-r--r-- 1 cbmucl33 cbmucl33  65M Apr  8 00:41 real_edge_table.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 7.9M Apr  8 00:41 real_node_table.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33  54M Apr  8 00:41 real_reduced_edge_table.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 2.9M Apr  8 00:41 real_reduced_node_table.txt
+drwxr-xr-x 2 cbmucl33 cbmucl33 4.0K Apr  8 00:41 stats
+drwxr-xr-x 2 cbmucl33 cbmucl33 4.0K Apr  8 00:41 props

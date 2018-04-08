@@ -13,15 +13,17 @@ source activate qiime1
 # setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-# comparing categoris fro statistical significant
-echo "compare categories"
-time compare_categories.py \
---method anosim \
--i cda/ngs_analysis/bdiv_even616/unweighted_unifrac_dm.txt \
+# core diversity analyses
+echo "Core diversity analyses"
+time core_diversity_analyses.py \
+--recover_from_failure \
+-i otusopen1/otu_table_mc2.biom \
 -m map.tsv \
--c SamplePh \
--o adonis_out \
--n 999
+-t otusopen1/rep_set.tre \
+-e 765 \
+-o cda-open1 \
+-a \
+-O 16
 
 # deactivating environment
 source deactivate

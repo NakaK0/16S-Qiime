@@ -6,7 +6,7 @@
 #Load modules
 module load eb
 module load Miniconda2
-
+cat
 # loading virtualenv
 source activate qiime1
 
@@ -17,10 +17,10 @@ export TMPDIR=~/qiime_tmp
 echo "compare categories"
 time compare_categories.py \
 --method anosim \
--i cda/ngs_analysis/bdiv_even616/unweighted_unifrac_dm.txt \
+-i cda-open1/bdiv_even765/unweighted_unifrac_dm.txt \
 -m map.tsv \
 -c SamplePh \
--o adonis_out \
+-o anosim_open_out \
 -n 999
 
 # deactivating environment

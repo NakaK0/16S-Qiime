@@ -13,7 +13,7 @@ source activate qiime1
 # setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-# comparing categoris fro statistical significant
+# comparing categories for statistical significant
 echo "compare categories"
 time compare_categories.py \
 --method anosim \

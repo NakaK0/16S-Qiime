@@ -14,10 +14,12 @@ source activate qiime1
 export TMPDIR=~/qiime_tmp
 
 # picking OTUs
-echo "Picking OTUs with closed reference"
+echo "Picking OTUs with open reference"
 time pick_open_reference_otus.py \
 -i dem1/seqs.fna \
 -o otusopen \
+-a \
+-O 16
 
 # deactivating environment
 source deactivate

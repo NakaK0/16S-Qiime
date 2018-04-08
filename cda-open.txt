@@ -20,8 +20,8 @@ time core_diversity_analyses.py \
 -i otusopen1/otu_table_mc2_w_tax_no_pynast_failures.biom \
 -m map.tsv \
 -t otusopen1/rep_set.tre \
--e 765 \
--o cda-open2 \
+-e 764 \
+-o cda-open \
 -a \
 -O 16
 

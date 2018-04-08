@@ -15,7 +15,12 @@ export TMPDIR=~/qiime_tmp
 
 #joining paired ends
 echo "join paired ends"
-time join_paired_ends.py -m fastq-join -f Read1.fastq -r Read2.fastq -b Index.fastq -o Read12/fastq-join_joined
+time join_paired_ends.py \
+-m fastq-join \
+-f Read1.fastq \
+-r Read2.fastq \
+-b Index.fastq \
+-o Read12/fastq-join_joined
 
 #deactivating environment
 source deactivate

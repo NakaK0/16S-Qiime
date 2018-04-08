@@ -1,0 +1,15 @@
+total 184K
+-rw-r--r-- 1 cbmucl33 cbmucl33  178 Apr  8 13:20 summary.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 4.6K Apr  8 13:20 cv_probabilities.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 5.7K Apr  8 13:20 mislabeling.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 157K Apr  8 13:20 feature_importance_scores.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33  241 Apr  8 13:20 confusion_matrix.txt
+
+summary.txt
+Model   Random Forest
+Error type      out-of-bag
+Estimated error 0.70000
+Baseline error (for random guessing)    0.70000
+Ratio baseline error to observed error  1.00000
+Number of trees 500
+

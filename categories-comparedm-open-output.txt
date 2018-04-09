@@ -1,0 +1,2 @@
+DM1     DM2     Number of entries       Mantel r statistic      p-value Number of permutations  Tail type
+/home/cbmucl33/2018_02_smb/cda-open/bdiv_even764/unweighted_unifrac_dm.txt      Lat_dm.txt      300.12076  0.444   999     two-sided

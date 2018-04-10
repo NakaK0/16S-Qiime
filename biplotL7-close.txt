@@ -13,15 +13,13 @@ source activate qiime1
 # setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-# Edit axis and comparison
+# Combine with taxa summary
 echo "make emperor"
 time make_emperor.py \
--c \
--i pro_open \
--o pro_open/plots/ \
+-i cda/ngs_analysis/bdiv_even616/unweighted_unifrac_pc.txt \
 -m map.tsv \
---custom_axes SamplePh,SampleDepth \
---number_of_axes 2
+-t summarized_taxa_close/map_L7.txt \
+-o biplotL7-close
 
 # deactivating environment
 source deactivate

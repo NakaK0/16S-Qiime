@@ -1,0 +1,6 @@
+total 2.1M
+-rw-r--r-- 1 cbmucl33 cbmucl33  34K Apr  9 19:36 map_L2.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 116K Apr  9 19:36 map_L3.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 282K Apr  9 19:36 map_L4.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 559K Apr  9 19:36 map_L5.txt
+-rw-r--r-- 1 cbmucl33 cbmucl33 1.1M Apr  9 19:36 map_L6.txt

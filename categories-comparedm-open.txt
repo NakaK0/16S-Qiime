@@ -13,12 +13,12 @@ source activate qiime1
 # setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-# distance matrix from mapping 
+# distance matrix from mapping
 echo " distance matrix from mapping"
 time compare_distance_matrices.py \
 --method=mantel \
--i ~/2018_02_smb/cda-open/bdiv_even764/unweighted_unifrac_dm.txt,Lat_dm.txt \ 
--o ~/2018_02_smb/compared/Lat_open \
+-i unweighted_unifrac_dm.txt,weighted_unifrac_dm.txt,PH_dm.txt,Lat_dm.txt,Long_dm.txt,Depth_dm.txt,Weather_dm.txt \
+-o ~/2018_02_smb/comparedm/all_open \
 -n 999
 
 # deactivating environment

@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules
+module load eb
+module load Miniconda2
+
+# loading virtualenv
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# distance comparison plots
+echo " make distance comparison plots"
+time make_distance_comparison_plots.py \
+--save_raw_data \
+-m map.tsv \
+-d ~/2018_02_smb/cda/ngs_analysis/bdiv_even616/unweighted_unifrac_dm.txt \
+-f SampleDepth \
+-c "SamplePh,SampleWeatherTemp" \
+-o dmp \
+-n 999
+
+# deactivating environment
+source deactivate

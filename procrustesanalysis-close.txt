@@ -13,15 +13,11 @@ source activate qiime1
 # setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-# Edit axis and comparison
-echo "make emperor"
-time make_emperor.py \
--c \
--i pro_open \
--o pro_open/plots/ \
--m map.tsv \
---custom_axes SamplePh,SampleDepth \
---number_of_axes 2
+# Performing Procrustes Analysis
+echo "transform coordinate matrices"
+time transform_coordinate_matrices.py \
+-i cda/ngs_analysis/bdiv_even616/unweighted_unifrac_pc.txt,cda/ngs_analysis/bdiv_even616/weighted_unifrac_pc.txt \
+-o pro_out
 
 # deactivating environment
 source deactivate
